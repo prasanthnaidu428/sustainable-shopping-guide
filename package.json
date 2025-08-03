@@ -1,0 +1,11 @@
+{
+  "name": "ecosmart-extension",
+  "version": "1.0.0",
+  "description": "A browser extension to check product sustainability.",
+  "scripts": {
+    "generate-icons": "node generate_icons.js"
+  },
+  "devDependencies": {
+    "canvas": "^2.11.2"
+  }
+}
