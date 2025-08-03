@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EcoSmart - Sustainable Shopping Assistant</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-leaf"></i> EcoSmart</h1>
+            <div class="product-info">
+                <div>Type: <span id="productType">--</span></div>
+            </div>
+        </header>
+        
+        <div id="loading">
+            <div class="spinner"></div>
+            <p>Analyzing product...</p>
+        </div>
+
+        <div id="content">
+            <div class="score-container">
+                <div class="score">
+                    <div id="ecoScore">--</div>
+                    <div id="ecoMessage">Click to analyze</div>
+                </div>
+                
+                <div class="materials">
+                    <h3>Materials:</h3>
+                    <ul id="materialsList">
+                        <li class="no-materials">No materials detected yet</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-icon"><i class="fas fa-smog"></i></div>
+                    <div class="metric-label">Carbon Footprint</div>
+                    <div id="carbonFootprint" class="metric-value">--</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-icon"><i class="fas fa-tint"></i></div>
+                    <div class="metric-label">Water Usage</div>
+                    <div id="waterUsage" class="metric-value">--</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-icon"><i class="fas fa-recycle"></i></div>
+                    <div class="metric-label">Recyclability</div>
+                    <div id="recyclability" class="metric-value">--</div>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <h3>Sustainability Tips</h3>
+                <ul id="suggestionsList">
+                    <li>Click "Analyze Product" to get started</li>
+                </ul>
+            </div>
+
+            <div class="actions">
+                <button id="scanPage" class="primary-btn">
+                    <i class="fas fa-search"></i> Analyze Product
+                </button>
+                <div class="settings">
+                    <a href="#" id="settingsLink">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/popup.min.js"></script>
+</body>
+</html>
